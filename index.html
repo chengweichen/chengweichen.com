@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cheng Wei Chen</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <p><img src="img/chengwei_125x125.jpg" class="img-circle"></p>
+            <h1>Cheng Wei Chen</h1>
+            <h3>DevOps Engineer @ <a href="http://www.theqwan.com/">TheQwan</a></h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg"></i>About</a>
+        </div>
+    </header>
+
+    <section id="about" class="about bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="lead">相信有那麼一天，我們將可以像畢凱艦長一樣用嘴巴叫所有主機做事！</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <p><img src="img/chengwei_200x200.jpg" class="img-circle"></p>
+                    <hr class="small">
+                    <h4><strong>Cheng Wei Chen</strong></h4>
+                    <p>表面上是只會在臉書釋放夫妻閃光文的愛妻家，私底下其實是默默關注新知的技術愛好者。
+                      明明是印刷、設計出身卻在程式碼及系統維運中找到創作樂趣。
+                      平時熱衷於研究維運管理及自動化的相關技術，目標是未來可以像畢凱艦長一樣用嘴巴叫所有主機做事！</p>
+                    <p>目前擔任 <a href="https://devopstw.club" target="_blank">DevOps Taiwan 社群</a>志工，同時也是 <a href="https://devopsdays.tw/" target="_blank">DevOpsDays Taipei</a> 其中一位 <a href="https://www.devopsdays.org/events/2017-taipei/contact/" target="_blank">Organizer</a>。</p>
+                    <hr class="small">
+
+
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/chengfan.chen"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.slideshare.net/warfan"><i class="fa fa-slideshare fa-fw fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://blog.chengweichen.com/"><i class="fa fa-bold fa-fw fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
